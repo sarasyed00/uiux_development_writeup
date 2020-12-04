@@ -1,0 +1,72 @@
+/* Put your style information here! */
+h1 {
+    text-align: center;
+    font-family: Abril Fatface;
+
+    font-size: 3em;
+    margin: 50px;
+    /* background-color: #FDE37A */
+}
+h2 {
+    font-size: 1em;
+}
+h3 {
+    font-size: 1.5em;
+    margin: 50px;
+}
+h6 {
+    font-size: 1em;
+    font-family: "Times New Roman";
+
+}
+ol {
+    font-size: 1em;
+}
+
+body {
+  background-color: #;
+  /* margin: 50% 50%; */
+  margin: 20px;
+  /* text-align: center */
+}
+
+head {
+    margin: 50%;
+}
+
+p {
+    font-size:150%;
+    /* font-family: Abril Fatface; */
+    padding: 20px;
+}
+
+li{
+    font-family: Abril Fatface;
+    font-size: 2em;
+}
+
+/* @media only screen and (max-width: 400px) {
+    li {
+        font-size: 50%;
+    }
+} */
+
+/* @media only screen and (max-width: 600px) {
+  .grid-item2 {
+    flex-basis: 30px;
+  }
+} */
+
+.structure-flex-container{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* align-items: flex-start; */
+}
+
+.screenshot{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+
+
+<html>
+  <head>
+    <title>Development Project</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Abril+Fatface" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#C9E265;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#task"> <i class = "material-icons">star</i>Task</a></li>
+                <li><a href="#intro"> <i class = "material-icons">star</i>Overview</a></li>
+                <li><a href="#structure"><i class = "material-icons">star</i>Structure</a></li>
+                <li><a href="#conclusion"><i class = "material-icons">star</i>Conclusion</a></li>
+            </ul>
+        </div>
+    </nav>
+  </head>
+
+  <body>
+
+
+      <p> <br> </p>
+      <div id="task">
+          <h1 style="color:#E2658A;font-family: Abril Fatface;"><i class = "material-icons">star</i>Task:  </h1>
+          <p>Design and implement a simple website using React that lists items and has the functionality to filter, sort, and aggregate them. </p>
+      </div>
+
+      <div id="intro">
+          <h1 style="color:#E2658A;font-family: Abril Fatface;"><i class = "material-icons">star</i>Overview: </h1>
+          <p> In this project, I used CSS, Javascript, and React to develop a food recipe site! This was my first project heavily using Javascript and React.
+              While the site is minimalistic, it has the functionality to filter and sort recipes by features like
+              difficulty level and time. You can also add recipes you are interested in to "Your Menu".
+          </p>
+          <h3 style="color:#65E2BD;font-family: Abril Fatface;"><i class = "material-icons">favorite</i>Goal: </h3>
+          <p>My goal was to create a simple and intuitive application that could be applicable to many sites like cooking blogs. By being able to sort by meal types and difficulty levels, users could find recipes that
+          were appropriate for them. </p>
+          <h3 style="color:#65E2BD;font-family: Abril Fatface;"><i class = "material-icons">favorite</i>Design: </h3>
+          <p>I tried to implement usability principles that would allow the application to be intuitive. For one, I made sure to keep
+          the site minamalistic and only include the information that was needed. I included simple design elements to allow users to understand when buttons or features were activated vs deactivated. For example, when
+          a user adds a recipe to their Menu, the button not only changes its wording but also fills in the heart. I also included simple additions like alt tags to improve accessibilty.</p>
+          <img class="screenshot" src="demo1.png" alt="photo of application" style="width:60%;">
+      </div>
+
+      <div id="structure">
+          <h1 style="color:#E2658A;font-family: Abril Fatface;"><i class = "material-icons">star</i> Structure: </h1>
+
+          <div class="structure-flex-container">
+              <div class="structure-flex-item" style="flex-basis: 700px">
+                  <p> This was the first project I've ever completed using React, so I sought out to take advantage of its features like Components.
+                      On the right we can see the strucutral hierarchy I implemented. I first created a RecipeList, which contianed all the recipes
+                      and their corresponding information. I then passed this list into a FilteredList component. This component handled many things.
+                      For one, it instantiated a NavBar component, the component that creates and displays the sorting and filtering bootstrap navigation bars.
+                      Secondly, FilteredList handles the logic of filtering and sorting the RecipeList, and it then passes this new filtered/sorted list
+                      into the DisplayList component. This component adds DisplayItem components (which is in charge of creating a nice layout for each item) in
+                      a dynamic flexbox layout. Lastly, the FilteredList component displays the menu section, by calling the DisplayMenu component
+                      which maps out the added menu items. Again, the FilteredList component handles the
+                      functionality of adding items to the menu and calculating added items aggregate cook times.
+                  </p>
+              </div>
+              <div class="structure-flex-item" style="flex-basis: 700px">
+                  <img src="hierarchy.png" alt="structural hierarchy" style="width:100%;">
+                  <p>For more information on the structure, see the application's <a href= "https://github.com/sarasyed00/uiux_development/blob/main/README.md"> README.</a> </p>
+              </div>
+
+          </div>
+      </div>
+
+      <div id="conclusion">
+          <h1 style="color:#E2658A;font-family: Abril Fatface;"><i class = "material-icons">star</i> Conclusion: </h1>
+          <p> I was able to create this project and fulfill my original goal. While it was challenging to learn use a different language
+              and new libraries, I was happy with the final outcome and felt that I was able to take advantage of their respective features.
+              While my final application was simplistic and highly generalized, it was fully functional and could be easily customized.
+
+              <br>You can checkout the application: <a href="https://infinite-citadel-96476.herokuapp.com/"> Here</a>.
+              <br> My code and corresponding README can be found on my github: <a href="https://github.com/sarasyed00/uiux_development"> Here</a>.
+          </p>
+
+      </div>
+
+
+  </body>
+</html>
